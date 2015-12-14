@@ -1,5 +1,4 @@
 defmodule AdventOfCode.Day2 do
-
   def pcalc({l, _}, {w, _}, {h, _}) do
     min = [l * w, w * h, h * l] |> Enum.min
     (2 * l * w) + (2 * w * h)  + (2 * h * l) + min
@@ -10,8 +9,11 @@ defmodule AdventOfCode.Day2 do
   end
 
   def calc([head|tail], total) do
-    [l, w, h] = head |> String.split("x")
-    calc(tail, total + pcalc(Integer.parse(l), Integer.parse(w), Integer.parse(h)))
+    [l, w, h] =
+      head
+      |> String.split("x")
+      |> Enum.map(fn (x) -> Integer.parse(x) end)
+    calc(tail, total + pcalc(l, w, h))
   end
 
   def calc(input) do
