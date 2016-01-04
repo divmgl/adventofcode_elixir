@@ -21,6 +21,6 @@ defmodule Challenges.Day2 do
   end
 
   def solve do
-    "../priv/day2input.txt" |> File.read! |> calc
+    "priv/day2input.txt" |> File.read! |> calc
   end
 end

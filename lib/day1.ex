@@ -24,6 +24,6 @@ defmodule Challenges.Day1 do
   end
 
   def solve do
-    travel(File.read!("../priv/day1input.txt"))
+    travel(File.read!("priv/day1input.txt"))
   end
 end
