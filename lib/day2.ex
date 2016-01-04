@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day2 do
+defmodule Challenges.Day2 do
   def pcalc({l, _}, {w, _}, {h, _}) do
     min = [l * w, w * h, h * l] |> Enum.min
     (2 * l * w) + (2 * w * h)  + (2 * h * l) + min
@@ -21,6 +21,6 @@ defmodule AdventOfCode.Day2 do
   end
 
   def solve do
-    "day2input.txt" |> File.read! |> calc
+    "../priv/day2input.txt" |> File.read! |> calc
   end
 end

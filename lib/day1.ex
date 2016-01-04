@@ -1,4 +1,4 @@
-defmodule AdventOfCode.Day1 do
+defmodule Challenges.Day1 do
   def travel([], _, floor) do
     floor
   end
@@ -24,6 +24,6 @@ defmodule AdventOfCode.Day1 do
   end
 
   def solve do
-    travel(File.read!("day1input.txt"))
+    travel(File.read!("../priv/day1input.txt"))
   end
 end

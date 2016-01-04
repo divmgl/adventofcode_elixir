@@ -1,0 +1,2 @@
+%{"remix": {:hex, :remix, "0.0.2"},
+  "reprise": {:hex, :reprise, "0.4.3"}}
