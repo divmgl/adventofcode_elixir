@@ -6,27 +6,17 @@ defmodule Day1 do
     floor
   end
 
-  # Match on ")", go down one floor
-  def travel([head|tail], ")", floor) do
-    travel(tail, head, floor - 1)
-  end
+  def travel([head|tail], char, floor) do
+    change = case char do
+      ")" -> -1 # Match on ")", go down one floor
+      "(" -> 1 # Match on "(", go up one floor
+      _ -> 0
+    end
 
-  # Match on "(", go up one floor
-  def travel([head|tail], "(", floor) do
-    travel(tail, head, floor + 1)
-  end
-
-  # This is the first character, start iterating
-  def travel([head|tail], nil, floor \\ 0) do
-    travel(tail, head, floor)
-  end
-
-  # This character did not match anything, skip it
-  def travel([_|tail], char, floor) do
-    travel(tail, char, floor)
+    travel(tail, head, floor + change)
   end
 
   def solve do
-    travel(@input |> String.split(""), nil, 0)
+    @input |> String.split("") |> travel(nil, 0)
   end
 end
