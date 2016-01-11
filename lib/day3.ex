@@ -1,4 +1,4 @@
-defmodule Challenges.Day3 do
+defmodule Day3 do
   @input "priv/day3input.txt" |> File.read!
 
   def solve([], _, hits) do

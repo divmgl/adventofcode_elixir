@@ -1,4 +1,4 @@
-defmodule Challenges.Day2 do
+defmodule Day2 do
   def pcalc({l, _}, {w, _}, {h, _}) do
     min = [l * w, w * h, h * l] |> Enum.min
     (2 * l * w) + (2 * w * h)  + (2 * h * l) + min

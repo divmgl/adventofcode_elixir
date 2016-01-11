@@ -1,4 +1,4 @@
-defmodule Challenges.Day5 do
+defmodule Day5 do
   @input "priv/day5input.txt" |> File.read!
   @bad_phrases ["ab", "cd", "pq", "xy"]
   @vowels ["a", "e", "i", "o", "u"]

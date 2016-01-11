@@ -1,4 +1,4 @@
-defmodule Challenges.Day6 do
+defmodule Day6 do
   @input "priv/day6input.txt" |> File.read!
 
   def execute_instruction(_, [], _, _, lights) do

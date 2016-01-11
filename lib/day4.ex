@@ -1,4 +1,4 @@
-defmodule Challenges.Day4 do
+defmodule Day4 do
   @input "yzbqklnj"
 
   def solve("00000" <> _, count) do
