@@ -1,5 +1,5 @@
 defmodule Day3 do
-  @input "priv/day3input.txt" |> File.read!
+  @input "priv/day3.txt" |> File.read!
 
   def solve([], _, hits) do
     Enum.count(hits)

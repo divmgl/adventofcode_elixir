@@ -1,5 +1,5 @@
 defmodule Day5 do
-  @input "priv/day5input.txt" |> File.read!
+  @input "priv/day5.txt" |> File.read!
   @bad_phrases ["ab", "cd", "pq", "xy"]
   @vowels ["a", "e", "i", "o", "u"]
   @max_vowel_count 3

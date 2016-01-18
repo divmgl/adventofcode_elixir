@@ -1,5 +1,9 @@
 defmodule Day1 do
-  @input File.read!("priv/day1input.txt")
+  @input File.read!("priv/day1.txt")
+
+  def travel([], _, -1 = floor) do
+    floor
+  end
 
   # No characters left, return the floor
   def travel([], _, floor) do

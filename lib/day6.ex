@@ -1,5 +1,5 @@
 defmodule Day6 do
-  @input "priv/day6input.txt" |> File.read!
+  @input "priv/day6.txt" |> File.read!
 
   def execute_instruction(_, [], _, _, lights) do
     lights
@@ -71,8 +71,8 @@ defmodule Day6 do
 
   def solve(string) do
     String.split(string, "\n")
-      |> build_light_matrix
-      |> filter_turned_on_lights
+    |> build_light_matrix
+    |> filter_turned_on_lights
   end
 
   def solve, do: solve(@input)
