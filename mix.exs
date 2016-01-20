@@ -18,6 +18,7 @@ defmodule Challenges.Mixfile do
   defp applications(_all), do: [:logger]
 
   defp deps do
-    [{:remix, "~> 0.0.1", only: :dev}]
+    [{:remix, "~> 0.0.1", only: :dev},
+     {:mix_test_watch, "~> 0.2", only: :dev}]
   end
 end

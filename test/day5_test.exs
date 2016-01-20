@@ -1,6 +1,6 @@
-defmodule Tests.Challenges.Day5 do
+defmodule Tests.Day5 do
   use ExUnit.Case
-  alias Challenges.Day5
+  alias Day5
 
   test "vowels" do
     assert Day5.vowels?("ugknbfddgicrmopn")
